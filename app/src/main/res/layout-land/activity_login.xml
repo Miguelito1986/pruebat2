@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="josecamacho.proyectorefuerzo.LoginActivity"
+    android:background="#05c3fd">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TitleLogin"
+        android:id="@+id/title"
+        android:textSize="40dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingTop="30dp"
+        android:layout_marginLeft="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitleLogin"
+        android:id="@+id/subtitle"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+    <requestFocus/>
+
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer" >
+
+        <EditText
+            android:id="@+id/usernameField"
+            style="@style/AuthEditText"
+            android:hint="username_hint"
+            android:layout_height="55dp"
+            android:layout_width="match_parent">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            style="@style/AuthEditText"
+            android:inputType="textPassword"
+            android:hint="password_hint"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LoginButton"
+        style="@style/AuthButton"
+        android:text="@string/login"
+        android:layout_marginTop="60dp"
+        android:background="#c4c1c1"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/editTextLayout"
+        android:layout_alignStart="@+id/editTextLayout" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+</RelativeLayout>

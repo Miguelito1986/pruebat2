@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yep</string>
+    <string name="title">YEP!</string>
+    <string name="subtitle">DO I KNOW YOU?</string>
+    <string name="login">login</string>
+    <string name="TitleLogin">YEP!</string>
+    <string name="subtitleLogin">DO I KNOW YOU?</string>
+</resources>
